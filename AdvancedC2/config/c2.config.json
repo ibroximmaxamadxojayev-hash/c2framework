@@ -1,0 +1,23 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 5000,
+    "debug": false,
+    "ssl": false
+  },
+  "c2": {
+    "name": "Advanced C2 Framework",
+    "version": "2.0",
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "encryption": {
+    "algorithm": "XOR",
+    "key": "0x42",
+    "enabled": true
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "c2_agents.db"
+  }
+}
