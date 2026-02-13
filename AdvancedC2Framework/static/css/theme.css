@@ -1,0 +1,53 @@
+/* C2 Framework - Hacker Theme */
+/* Global theme variables and overrides */
+
+:root {
+    --primary: #00ff88;
+    --secondary: #00ffff;
+    --danger: #ff0055;
+    --dark: #0a0e1a;
+    --darker: #050709;
+    --grid: rgba(0, 255, 136, 0.03);
+}
+
+/* Matrix-style scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 255, 136, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    box-shadow: 0 0 8px var(--primary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+    box-shadow: 0 0 12px var(--secondary);
+}
+
+/* Custom animations */
+@keyframes glow {
+    0%, 100% { text-shadow: 0 0 5px var(--primary); }
+    50% { text-shadow: 0 0 15px var(--primary); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+/* Selection highlight */
+::selection {
+    background: var(--primary);
+    color: var(--dark);
+}
+
+::-moz-selection {
+    background: var(--primary);
+    color: var(--dark);
+}
